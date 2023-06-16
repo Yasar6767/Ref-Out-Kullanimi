@@ -11,18 +11,23 @@ namespace Ref_Out_Kullanimi
             int sayi3 = 40;
             int sayi4 = 60;
 
+            //Out Kullanımı
             var result = Add(out sayi1, sayi2);
+
+            //Ref Kullanımı
             var result2 = Add2(ref sayi3, sayi4);
             Console.WriteLine(result);
             Console.WriteLine(result2);
 
         }
 
+        //Out Kullanımı
         static int Add(out int sayi1, int sayi2)
         {
             sayi1 = 30;
             return sayi1 + sayi2;
         }
+        //Ref Kullanımı
         static int Add2(ref int sayi3, int sayi4)
         {
             sayi3 = 20;
